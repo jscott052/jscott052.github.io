@@ -1,0 +1,44 @@
+html
+{
+	
+}
+
+body
+{
+  color: White;
+  background-color: #68A691;
+  border: 20px solid #BFD3C1;
+}
+
+header
+{
+  font-family: Times;
+  text-align: center;
+  color: Black;
+}
+
+main
+{
+	
+}
+
+footer
+{
+  text-align: center;
+  font-style: italic;
+}
+
+figure
+{
+	text-align: center;
+}
+
+figcaption
+{
+	font-style: italic;
+	color: Azure;
+	text-align: center;
+}
+
+
+
