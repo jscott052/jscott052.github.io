@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>StrumAlong | Home Page</title>
+    <link rel="stylesheet" type="text/css" href="styles/homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+  </head>
+  <body>
+    <div class="header">
+      <div class="logoimage">
+        <img src="img/logo.png" alt="logo">
+      </div>
+      <h1 class="textselectoff"><span class="highlight">Strum</span>Along</h1>
+      <p class="textselectoff">Free Online Guitar Lessons</p>
+    </div>
+    <div class="navbar">
+      <a href="index.html" class="current">Home</a>
+      <a href="learn.html">Learn</a>
+      <a href="equipment.html">Equipment</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="maincard" style="text-align: center;">
+          <h2>Welcome to StrumAlong!</h2>
+          <p>This website was designed for beginning guitarists to get started on their journey of playing the guitar!</p>
+          <p>On this site, you will find an assortment of lessons designed for beginners to learn effectively, and have fun while doing so.</p>
+          <p>Playing the guitar is a fun and rewarding hobby, but it takes a long time to master. Having a good learning source is crucial for success.
+          So what are you waiting for? Pick up your guitar and
+          start learning today!</p>
+        </div>
+        <div class="card">
+          <a href="lessonone.html">
+            <h3>First Lesson &#119136;</h3>
+            <p>Click here to navigate to the first lesson in the course. Get ready to learn!</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="lessontwo.html">
+            <h3>Second Lesson &#119136;</h3>
+            <p>Click here to navigate to the second lesson in the course. Time to start playing!</p>
+          </a>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <img class="slideshow" src="img/showcase1.jpg" alt="image">
+          <img class="slideshow" src="img/showcase2.jpg" alt="image">
+          <img class="slideshow" src="img/showcase3.jpg" alt="image">
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h4>Copyright &copy; 2020 StrumAlong</h4>
+      <p>Designed by Jaime Scott</p>
+      <p>jscott52@email.cpcc.edu</p>
+      <a href="http://validator.w3.org/check?uri=referer" style="text-decoration: none;">
+      <img style = "border:0; width:88px; height:31px" src="img/htmlbuttonyellow.png" alt="HTML5 Validation Button" />
+      </a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer" style="text-decoration: none;">
+      <img style="border:0;width:88px;height:31px" src="img/cssblue.gif" alt="CSS Validation Button" />
+      </a>
+    </div>
+
+    <script>
+      var myIndex = 0
+      carousel();
+
+      function carousel() {
+        var i;
+        var x =
+        document.getElementsByClassName('slideshow');
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000)
+      }
+    </script>
+  </body>
+</html>

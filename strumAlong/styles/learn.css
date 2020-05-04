@@ -1,0 +1,112 @@
+/* Global Styling */
+body {
+  font-family: 'Cormorant Garamond',serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 15px;
+  text-align: center;
+  background: #A20021;
+  font-family: 'Lobster',cursive;
+}
+
+.header h1{
+  font-size: 45px;
+}
+
+.logoimage {
+  position: absolute;
+  right: 55%;
+  top: 30px;
+}
+
+.navbar{
+  overflow: hidden;
+  background-color: #071108;
+  border-bottom: 5px solid #4F000B;
+  border-top: 5px solid #4F000B;
+}
+
+.navbar a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 30px;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #071108;
+  margin-top: 10px;
+  color: #f2f2f2;
+}
+
+.current {
+  background-color: #364652;
+}
+
+.textselectoff {
+  user-select: none;
+}
+
+.highlight {
+  color: #EDEDF4
+}
+
+
+/* End global styling */
+
+.maincolumn {
+  width: 95%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: Arial,sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.maincard {
+  display: inline-block;
+  background-color: white;
+}
+
+.card {
+  display: inline-block;
+  background-color: white;
+}
+
+.card:hover{
+  background-color: #DEDEDE;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.lessonbox {
+  display: flex;
+  width:10%;
+  margin: 10px 35px;
+  border: 3px solid black;
+}
+
+.clickanchor {
+  display: block;
+}
